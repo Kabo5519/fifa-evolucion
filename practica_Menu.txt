@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evolución de FIFA</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: black;
+      color: white;
+    }
+
+    .rojo {
+      color: red;
+    }
+
+    .marquesina {
+      font-size: 50px;
+      font-weight: bold;
+      padding: 30px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .marquesina img {
+      height: 60px;
+    }
+
+    marquee {
+      display: flex;
+      justify-content: center;
+    }
+
+    .menu {
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(to right, red 50%, blue 50%);
+      padding: 20px 0;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      margin: 0 30px;
+      font-size: 22px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .menu a:hover {
+      color: yellow;
+    }
+
+    #presentacion {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px;
+      background-image: url('file:///C:/Users/Felix%20San/Downloads/90f7deb5-2751-41d1-8dac-c1f68b61569b.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      height: 100vh;
+      position: relative;
+      color: white;
+    }
+
+    #presentacion::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+
+    #presentacion > * {
+      position: relative;
+      z-index: 1;
+    }
+
+    .texto-blanco {
+      font-size: 28px;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+    }
+
+    #presentacion h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .contenido {
+      display: none;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .contenido img {
+      width: 300px;
+      margin: 10px;
+      border: 3px solid white;
+      border-radius: 10px;
+    }
+
+    .contenido p {
+      font-size: 20px;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Marquesina -->
+  <marquee behavior="scroll" direction="left">
+    <div class="marquesina">
+      <img src="file:///C:/Users/Felix%20San/Downloads/easports.jpg.webp" alt="Logo de FIFA">
+      EVOLUCIÓN DE FIFA
+    </div>
+  </marquee>
+
+  <!-- Menú -->
+  <nav class="menu">
+    <a onclick="mostrarInicio()">INICIO</a>
+    <a onclick="mostrarGeneracion()">GENERACIÓN</a>
+    <a onclick="mostrarEdiciones()">EDICIONES DE FIFA</a>
+    <a onclick="mostrarCortos()">CORTOS</a>
+    <a href="#">VIDEO</a>
+  </nav>
+
+  <!-- Hoja de presentación -->
+  <div id="presentacion">
+    <h1 class="texto-blanco"><span class="rojo">TEMA:</span> EVOLUCIÓN DE FIFA</h1>
+    <p class="texto-blanco"><span class="rojo">PRESENTADO POR</span></p>
+    <p class="texto-blanco">LEONEL CASTILLO SÁNCHEZ</p>
+    <p class="texto-blanco">SOFÍA RODRÍGUEZ AMIL</p>
+    <p class="texto-blanco"><span class="rojo">MÓDULO:</span> ADMINISTRACIÓN DE SITIOS WEB</p>
+    <p class="texto-blanco"><span class="rojo">MAESTRO:</span> RAÚL CONTRERAS RAMOS</p>
+  </div>
+
+  <!-- Sección INICIO -->
+  <div id="seccionInicio" class="contenido">
+    <h2 style="font-size: 32px;">¿Qué es FIFA?</h2>
+    <p>
+      FIFA es una reconocida franquicia de videojuegos deportivos desarrollada por EA Sports desde 1993. 
+      Ha sido pionera en llevar el fútbol a consolas y PC, ofreciendo una experiencia auténtica gracias a sus licencias oficiales, gráficos avanzados y jugabilidad realista.
+    </p>
+    <p>
+      A lo largo de los años, FIFA ha evolucionado constantemente, introduciendo modos como el Modo Carrera, FIFA Ultimate Team (FUT), Volta, y opciones multijugador en línea. Ha sido clave en el crecimiento de los eSports, organizando competencias globales.
+    </p>
+    <p>
+      En 2023, la franquicia cambió su nombre a <strong>EA Sports FC</strong> tras finalizar su acuerdo con la FIFA. Sin embargo, mantuvo su esencia y continúa siendo líder en videojuegos deportivos.
+    </p>
+    <div>
+      <img src="file:///C:/Users/Felix%20San/Downloads/Electronic-Arts1.jpg" alt="FIFA imagen 1">
+      <img src="file:///C:/Users/Felix%20San/Downloads/ea-media-fc-16x9.jpg.adapt.crop191x100.628p.jpg" alt="FIFA imagen 2">
+      <img src="file:///C:/Users/Felix%20San/Downloads/ea-sports-fc-2jpg.webp" alt="FIFA imagen 3">
+    </div>
+  </div>
+
+  <!-- Sección GENERACIÓN -->
+  <div id="seccionGeneracion" class="contenido">
+    <h2 style="font-size: 32px;">Generaciones de FIFA</h2>
+    <p>
+      Desde su primer lanzamiento en 1993, FIFA ha acompañado a las principales generaciones de consolas y PC, iniciando en sistemas como Sega Mega Drive y Super Nintendo. Con cada generación, el juego ha mejorado en gráficos, sonido, físicas y realismo.
+    </p>
+    <p>
+      En la era de PlayStation 2 y Xbox, FIFA introdujo modos de juego más completos y una inteligencia artificial mejorada. Más adelante, en la era de PS3 y Xbox 360, dio un gran salto en animaciones y licencias.
+    </p>
+    <p>
+      Con la llegada de PS4 y PS5, FIFA implementó motores gráficos avanzados como Frostbite, que ofrecieron un aspecto visual cinematográfico. También se añadieron tecnologías como Hypermotion para una animación más fluida y realista.
+    </p>
+    <div>
+      <img src="file:///C:/Users/Felix%20San/Downloads/rey.png" alt="Generación 1">
+      <img src="file:///C:/Users/Felix%20San/Downloads/ZNPDKEGZPFILVBEBNSAFRGENIY.jpg" alt="Generación 2">
+      <img src="file:///C:/Users/Felix%20San/Downloads/fifa_5651285_20230927114730.jpg" alt="Generación 3">
+    </div>
+  </div>
+
+  <!-- Sección EDICIONES DE FIFA -->
+  <div id="seccionEdiciones" class="contenido">
+    <h2 style="font-size: 32px;">Ediciones más destacadas de FIFA</h2>
+    <p>
+      A lo largo de los años, FIFA ha lanzado varias ediciones que han marcado la historia del fútbol virtual. Algunas de las ediciones más destacadas incluyen:
+    </p>
+    <ul>
+      <li><strong>FIFA 94:</strong> La primera edición de FIFA para consolas de 16 bits. Estableció las bases para la franquicia.</li>
+      <li><strong>FIFA 98: Road to World Cup:</strong> Introdujo el modo "Road to World Cup" y el famoso modo de "FIFA Indoor." Fue uno de los más populares en su tiempo.</li>
+      <li><strong>FIFA 2001:</strong> Con una jugabilidad más fluida y gráficos mejorados, esta edición marcó un hito en la serie.</li>
+      <li><strong>FIFA 12:</strong> Introducción del motor de "Impact Engine" para una física más realista en las colisiones de jugadores.</li>
+      <li><strong>FIFA 17:</strong> Introdujo el motor gráfico Frostbite y el modo "The Journey," donde los jugadores controlaban a un joven futbolista.</li>
+    </ul>
+    <div>
+      <img src="file:///C:/Users/Felix%20San/Downloads/51BgOCIHUoL._AC_UF1000,1000_QL80_.jpg" alt="FIFA 98">
+      <img src="file:///C:/Users/Felix%20San/Downloads/443f784a467b49d131c358bf436169ce.jpg" alt="FIFA 2001">
+      <img src="file:///C:/Users/Felix%20San/Downloads/81FnxRmVm2L.jpg" alt="FIFA 17">
+    </div>
+  </div>
+
+  <!-- Sección CORTOS -->
+  <div id="seccionCortos" class="contenido">
+    <h2 style="font-size: 32px;">Cortos sobre FIFA</h2>
+    <p>
+      Aquí podrás disfrutar de algunos cortos y momentos épicos del mundo de FIFA:
+    </p>
+    
+    <!-- Video de FIFA (puedes sustituir con enlaces de YouTube o archivos de video) -->
+    <div>
+      <h3>Video: FIFA 21 - Los Mejores Momentos</h3>
+      <iframe width="560" height="315" src="file:///C:/Users/Felix%20San/Downloads/mejores-momentos-goles-y-celebraciones-de-fifa-20-temporada-2019-2020---abuelonchos-fc.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+    <!-- GIF de FIFA (puedes agregar más GIFs relacionados con FIFA) -->
+    <div>
+      <h3>GIF: Celebración épica</h3>
+      <img src="file:///C:/Users/Felix%20San/Downloads/14944971137394.gif" alt="Celebración FIFA" width="400">
+    </div>
+
+    <div>
+      <h3>GIF: Gol impresionante</h3>
+      <img src="file:///C:/Users/Felix%20San/Downloads/gif-gracioso-futbol-lanzamiento-falta-barrera-gol-propia-puerta.gif" alt="Gol FIFA" width="400">
+    </div>
+  </div>
+
+  <script>
+    function mostrarInicio() {
+      document.getElementById("presentacion").style.display = "none";
+      document.getElementById("seccionInicio").style.display = "block";
+      document.getElementById("seccionGeneracion").style.display = "none";
+      document.getElementById("seccionEdiciones").style.display = "none";
+      document.getElementById("seccionCortos").style.display = "none";
+    }
+
+    function mostrarGeneracion() {
+      document.getElementById("presentacion").style.display = "none";
+      document.getElementById("seccionInicio").style.display = "none";
+      document.getElementById("seccionGeneracion").style.display = "block";
+      document.getElementById("seccionEdiciones").style.display = "none";
+      document.getElementById("seccionCortos").style.display = "none";
+    }
+
+    function mostrarEdiciones() {
+      document.getElementById("presentacion").style.display = "none";
+      document.getElementById("seccionInicio").style.display = "none";
+      document.getElementById("seccionGeneracion").style.display = "none";
+      document.getElementById("seccionEdiciones").style.display = "block";
+      document.getElementById("seccionCortos").style.display = "none";
+    }
+
+    function mostrarCortos() {
+      document.getElementById("presentacion").style.display = "none";
+      document.getElementById("seccionInicio").style.display = "none";
+      document.getElementById("seccionGeneracion").style.display = "none";
+      document.getElementById("seccionEdiciones").style.display = "none";
+      document.getElementById("seccionCortos").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+
